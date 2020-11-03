@@ -8,16 +8,16 @@ Destination.destroy_all
 puts "Destroy Complete."
 puts "Seeding..."
 
-User.create(username: "brianb85", password_digest: "1234", location: "Chicago")
-User.create(username: "natgal", password_digest: "1234", location: "Hawaii")
-User.create(username: "hardsteele", password_digest: "1234", location: "Miami")
+User.create(username: "brianb85", password: "1234", location: "Chicago")
+User.create(username: "natgal", password: "1234", location: "Hawaii")
+User.create(username: "hardsteele", password: "1234", location: "Miami")
 
-Host.create(name: "Jeff", age: 35, bio: "Hi! my name Jeff. I like rap", rating: 4)
+Host.create(name: "Jeff", age: 35, bio: "Hi! I'm Jeff. I like rap", rating: 4)
 Host.create(name: "Joanna", age: 30, bio: "Hi! I'm Joanna, I like to sleep", rating: 3)
-Host.create(name: "Austin", age: 24, bio: "Hi! I'm Austin, once you get to know me, you'll like me", rating: 5)
-Host.create(name: "Ignas", age: 12, bio: "legally i'm 6ft tall", rating: 4)
+Host.create(name: "Austin", age: 24, bio: "Hi! I'm Austin", rating: 5)
+Host.create(name: "Ignas", age: 12, bio: "legally I'm 6ft tall", rating: 4)
 Host.create(name: "The Zan", age: 200, bio: "I am the Zan, all hail The Zan", rating: 5)
-Host.create(name: "Victor", age: 26, bio: "Hi, i'm Victor", rating: 3)
+Host.create(name: "Victor", age: 26, bio: "Hi, I'm Victor, I like wine", rating: 3)
 Host.create(name: "Kimberlyn", age: 24, bio: "I love Vampire Diaries", rating: 4)
 Host.create(name: "Josue", age: 21, bio: "uhhh ummmm like, uhhh", rating: 1)
 
