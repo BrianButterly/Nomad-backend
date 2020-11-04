@@ -17,7 +17,7 @@ Host.create(name: "Joanna", age: 30, bio: "Hi! I'm Joanna, I like to sleep", rat
 Host.create(name: "Austin", age: 24, bio: "Hi! I'm Austin", rating: 5)
 Host.create(name: "Ignas", age: 12, bio: "legally I'm 6ft tall", rating: 4)
 Host.create(name: "The Zan", age: 200, bio: "I am the Zan, all hail The Zan", rating: 5)
-Host.create(name: "Victor", age: 26, bio: "Hi, I'm Victor, I like wine", rating: 3)
+Host.create(name: "Victor", age: 26, bio: "Hi, I'm Victor, I like win", rating: 3)
 Host.create(name: "Kimberlyn", age: 24, bio: "I love Vampire Diaries", rating: 4)
 Host.create(name: "Josue", age: 21, bio: "uhhh ummmm like, uhhh", rating: 1)
 
