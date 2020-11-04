@@ -9,6 +9,12 @@ class HostsController < ApplicationController
         host = Host.find(params[:id])
         render json: host
     end
+
+    def update
+        host = Host.find(params[:id])
+        host.update(host_params)
+        render json: host
+    end
     
 end
 

@@ -7,11 +7,11 @@ Rails.application.routes.draw do
   resources :destinations
   resources :hosts
   
-   namespace :api do
-     namespace :v1 do
+  namespace :api do
+    namespace :v1 do
 
       post "/auth", to: "auth#create"
-      
+      # get '/sessions/current_session', to: 'auth#show'
     end
   end
 

@@ -5,17 +5,15 @@ class UsersController < ApplicationController
         render json: users
     end
     
+    def show
+        user = User.find(params[:id])
+        render json: user
+    end
+    
+    private
+    
+    def user_params
+        params.require(:user).permit(:username, :password, :location)
+    end
+    
 end
-
-#     def show
-#         user = User.find(params[:id])
-#         render json: user
-#     end
-
-# end
-
-# private
-
-# def user_params
-#     params.require(:user).permit(:username, :password, :location)
-# end
