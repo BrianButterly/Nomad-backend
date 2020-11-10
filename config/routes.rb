@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   get "/users", to: "users#index"
-
+  
+  resources :reviews
   resource :users
   resources :stays
   resources :destinations
@@ -11,7 +12,7 @@ Rails.application.routes.draw do
     namespace :v1 do
 
       post "/auth", to: "auth#create"
-      # get '/sessions/current_session', to: 'auth#show'
+      get '/current_user', to: 'auth#show'
     end
   end
 

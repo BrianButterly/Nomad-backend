@@ -3,7 +3,7 @@ class CreateDestinations < ActiveRecord::Migration[6.0]
     create_table :destinations do |t|
       t.string :country
       t.string :city
-
+      
       t.timestamps
     end
   end
